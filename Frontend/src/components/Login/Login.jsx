@@ -10,9 +10,24 @@ const Login = () => {
     {/*Funcion para Capturar datos almacenados al hacer clic en el boton de login*/}
     const  haddleLogin = (e) => {
         e.preventDefault();
-        console.log({
+        const data = {
             username: username,
             password: password
+        };
+
+        fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            console.log(result)
+        })
+        .catch(error => {
+            console.log(error)
         })
     }
 
