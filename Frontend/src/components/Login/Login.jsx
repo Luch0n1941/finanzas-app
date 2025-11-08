@@ -1,4 +1,4 @@
-import './Login.css'
+import './css/Login.css'
 import React, { useState } from 'react';
 
 
@@ -53,7 +53,7 @@ const Login = () => {
                         type="password"
                         id="password"
                         className="w-full border-4 border-dark p-3 focus:outline-none" />
-                        <img src="./eye-slash-solid-full.svg" alt="ojo" id="ojo" className="absolute cursor-pointer top-0 botton-0 right-4 my-auto"/>
+                        <img src="./eye-slash-solid-full.svg" alt="ojo" id="ojo" className="h-8 bottom-1 absolute cursor-pointer top-0 botton-0 right-4 my-auto"/>
                     </div>
                     <a href="#" type="" className="text-base text-right">¿Otra vez sin contraseña?</a>
                     <div className="relative group">

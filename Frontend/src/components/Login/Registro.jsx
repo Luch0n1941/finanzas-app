@@ -1,4 +1,4 @@
-import './Registro.css'
+import './css/Registro.css'
 import React, { useState } from 'react'
 
 const Registro = () => {

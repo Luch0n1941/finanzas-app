@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const routes = require('./api/endPoints.js')
+const routes = require('../api/endPoints.js')
 const cors = require('cors')
 
 app.use(express.json())
